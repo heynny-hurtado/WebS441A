@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Taller práctico de JavaScript: gestión de una tienda intergaláctica.">
+    <title>Tienda Intergaláctica | Taller JavaScript</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+    <header class="site-header" id="inicio">
+        <div class="header-inner">
+            <a class="brand" href="#inicio" aria-label="Tienda Intergaláctica, inicio">
+                <span class="brand-icon" aria-hidden="true">🚀</span>
+                <span>
+                    <strong>Tienda Intergaláctica</strong>
+                    <small>Gestión de productos espaciales</small>
+                </span>
+            </a>
+            <nav class="main-nav" aria-label="Navegación principal">
+                <a href="#inicio">Inicio</a>
+                <a href="#productos">Productos</a>
+                <a href="#inventario">Inventario</a>
+                <a href="#taller">Taller</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <section class="intro" aria-labelledby="titulo-taller">
+            <p class="eyebrow">MISIÓN DE APRENDIZAJE</p>
+            <h1 id="titulo-taller">Intergalactico </h1>
+            <p>Explora los cinco módulos del taller mientras administras una tienda de productos espaciales. Puedes probar el sistema de facturación y realizar ventas de ejemplo.</p>
+        </section>
+
+        <section class="shop-section" id="productos" aria-labelledby="titulo-productos">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">CATÁLOGO</p>
+                    <h2 id="titulo-productos">Productos destacados</h2>
+                </div>
+                <span class="section-tag">Moneda: créditos galácticos</span>
+            </div>
+            <div class="product-grid" id="product-list" aria-live="polite">
+                <!-- JavaScript dibuja las tarjetas de productos aquí. -->
+            </div>
+        </section>
+
+        <section class="tools-grid" aria-label="Herramientas de la tienda">
+            <article class="panel billing-panel" aria-labelledby="titulo-factura">
+                <div class="panel-heading">
+                    <span class="module-number number-teal">02</span>
+                    <div>
+                        <p class="eyebrow">MÓDULO 2</p>
+                        <h2 id="titulo-factura">Sistema de facturación</h2>
+                    </div>
+                </div>
+                <p class="panel-description">Selecciona un producto y una cantidad. Las compras de más de cinco unidades reciben un 10 % de descuento.</p>
+                <form id="billing-form">
+                    <div class="form-field">
+                        <label for="billing-product">Producto</label>
+                        <select id="billing-product" name="product" required>
+                            <!-- Las opciones se agregan desde JavaScript. -->
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="billing-quantity">Cantidad</label>
+                        <input id="billing-quantity" name="quantity" type="number" min="1" value="1" required>
+                    </div>
+                    <label class="checkbox-field" for="off-world-customer">
+                        <input id="off-world-customer" name="offWorldCustomer" type="checkbox">
+                        <span>El cliente viene de otro planeta</span>
+                    </label>
+                    <button class="button button-primary" type="submit">Calcular factura</button>
+                </form>
+                <output class="result-box" id="billing-result" aria-live="polite">Tu factura aparecerá aquí.</output>
+            </article>
+
+            <article class="panel inventory-panel" id="inventario" aria-labelledby="titulo-inventario">
+                <div class="panel-heading">
+                    <span class="module-number number-blue">03</span>
+                    <div>
+                        <p class="eyebrow">MÓDULO 3</p>
+                        <h2 id="titulo-inventario">Inventario actual</h2>
+                    </div>
+                </div>
+                <p class="panel-description">Esta lista se genera recorriendo el array de productos con un bucle.</p>
+                <ul class="inventory-list" id="inventory-list" aria-live="polite">
+
+                </ul>
+            </article>
+        </section>
+
+        <section class="workshop-section" id="taller" aria-labelledby="titulo-modulos">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">LO QUE ESTÁS PRACTICANDO</p>
+                    <h2 id="titulo-modulos">Los cinco módulos</h2>
+                </div>
+            </div>
+            <div class="module-grid">
+                <article class="module-card">
+                    <div class="module-heading">
+                        <span class="module-number number-blue">01</span>
+                        <h3>Variables y tipos de datos</h3>
+                    </div>
+                    <p>Guarda el nombre, precio, stock y permiso de exportación de un producto usando <code>let</code>, cadenas de texto, números y booleanos.</p>
+                    <pre class="console-output"><code id="exercise-1-output">Ejecutando ejercicio...</code></pre>
+                </article>
+
+                <article class="module-card">
+                    <div class="module-heading">
+                        <span class="module-number number-teal">02</span>
+                        <h3>Estructuras condicionales</h3>
+                    </div>
+                    <p>Utiliza <code>if</code> y <code>else</code> para aplicar descuentos o denegar una compra cuando no se permite la exportación.</p>
+                    <pre class="console-output"><code id="exercise-2-output">Ejecutando ejercicio...</code></pre>
+                </article>
+
+                <article class="module-card">
+                    <div class="module-heading">
+                        <span class="module-number number-purple">03</span>
+                        <h3>Bucles y arrays</h3>
+                    </div>
+                    <p>Recorre la colección de productos e imprime el nombre y la cantidad disponible en el inventario.</p>
+                    <pre class="console-output"><code id="exercise-3-output">Ejecutando ejercicio...</code></pre>
+                </article>
+
+                <article class="module-card">
+                    <div class="module-heading">
+                        <span class="module-number number-orange">04</span>
+                        <h3>Funciones</h3>
+                    </div>
+                    <p>Separa la lógica en <code>calcularTotal()</code> y <code>actualizarStock()</code> para reutilizarla cuando sea necesario.</p>
+                    <pre class="console-output"><code id="exercise-4-output">Ejecutando ejercicio...</code></pre>
+                </article>
+
+                <article class="module-card">
+                    <div class="module-heading">
+                        <span class="module-number number-pink">05</span>
+                        <h3>Objetos y clases (POO)</h3>
+                    </div>
+                    <p>La clase <code>ProductoEspacial</code> define las propiedades y el método <code>vender()</code> para realizar ventas y actualizar el stock.</p>
+                    <pre class="console-output"><code id="exercise-5-output">Ejecutando ejercicio...</code></pre>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="footer-brand" href="#inicio"><span aria-hidden="true">🚀</span> Tienda Intergaláctica</a>
+        <p>Proyecto de práctica · HTML semántico, CSS y JavaScript</p>
+        <a href="#inicio">Volver al inicio ↑</a>
+    </footer>
+</body>
+</html>

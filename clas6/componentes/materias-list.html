@@ -1,0 +1,80 @@
+<section class="materia-list-section">
+
+    <div class="materia-list-section-header">
+
+        <div class="materia-list-section-copy">
+            <h1>Materias</h1>
+            <p>Organiza tus asignaturas y asignales un color.</p>
+        </div>
+
+        <button type="button" class="materia-list-new-button">
+            Nueva materia
+        </button>
+
+    </div>
+
+
+    <div class="materia-list-card">
+
+        <div class="materia-list-card-header">
+            <h2>Nueva materia</h2>
+        </div>
+
+        <div class="materia-list-card-body">
+
+            <form>
+
+                <div class="materia-list-row">
+
+                    <label class="materia-field">
+                        <span>Nombre de la materia</span>
+                        <input type="text" name="nombre" id="nombre" placeholder="Ej. Programación" />
+                    </label>
+
+
+                    <label class="materia-field">
+                        <span>Color</span>
+
+                        <div class="materia-color-group">
+
+                            <input type="color" name="color" id="color" value="#7c3aed" />
+
+                            <input type="text" name="color-texto" value="#7C3AED" />
+
+                        </div>
+
+                    </label>
+
+
+                    <label class="materia-field">
+                        <span>Estado</span>
+
+                        <select name="estado" id="estado">
+                            <option value="activa">Activa</option>
+                            <option value="inactiva">Inactiva</option>
+                        </select>
+
+                    </label>
+
+
+                    <div class="materia-list-actions">
+
+                        <button type="button" class="materia-cancel-button">
+                            Cancelar
+                        </button>
+
+                        <button type="submit" class="materia-save-button">
+                            Guardar
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>

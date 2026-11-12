@@ -1,0 +1,23 @@
+Taller de JavaScript: Conceptos Básicos
+
+TALLER PRÁCTICO: PROGRAMACIÓN EN JAVASCRIPT
+Temática: Gestión de una Tienda Intergaláctica
+MÓDULO 1: Variables y Tipos de Datos
+Objetivo: Aprender a declarar variables y entender los tipos de datos básicos (String, Number, Boolean).
+Ejercicio 1: Declara variables para almacenar los datos de un producto espacial. Debes guardar: el nombre del producto, su precio en créditos, la cantidad disponible en inventario y si está permitido exportarlo a otros planetas. Muestra todos los datos en la consola.
+MÓDULO 2: Estructuras Condicionales (if / else / switch)
+Objetivo: Tomar decisiones en el código según diferentes situaciones.
+Ejercicio 2: Crea un sistema de facturación. Si el cliente compra más de 5 unidades de un producto,
+ aplica un descuento del 10% al total. Si el producto no está permitido para exportación y el cliente es de otro planeta, muestra un mensaje denegando la compra.
+MÓDULO 3: Bucles (for / while)
+Objetivo: Repetir acciones y recorrer colecciones de datos.
+Ejercicio 3: Crea una lista (array) con 4 productos diferentes. Usa un bucle para recorrer la lista e imprimir en la consola el inventario actual con el formato: "Producto: [Nombre] | Stock: [Cantidad]".
+MÓDULO 4: Funciones
+Objetivo: Modularizar el código, evitar repetir lógica y procesar datos.
+Ejercicio 4: Escribe una función llamada calcularTotal que reciba el precio de un producto y la cantidad solicitada. La función debe retornar el valor total a pagar. Luego, crea otra función llamada actualizarStock que reste las unidades compradas del inventario total.
+MÓDULO 5: Objetos y Clases (POO)
+Objetivo: Modelar elementos del mundo real usando Programación Orientada a Objetos.
+Ejercicio 5: Define una clase llamada ProductoEspacial. El constructor debe recibir el nombre,
+precio, stock y categoría. Añade un método llamado vender que reciba una cantidad; este método debe verificar 
+si hay suficiente stock, restar la cantidad si es posible y mostrar el dinero total recaudado. Instancia al menos
+ dos objetos diferentes a partir de esta clase y realiza una venta en cada uno.

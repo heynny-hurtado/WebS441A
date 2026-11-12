@@ -1,0 +1,358 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 35px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8f8f8;
+    color: #101827;
+}
+
+.contenedor-perfil {
+    max-width: 820px;
+    margin: auto;
+    background: white;
+    border-radius: 65px;
+    overflow: hidden;
+}
+
+header {
+    padding: 55px 55px 0;
+}
+
+.sec_menu,
+.titulo_progreso,
+.datos_perfil,
+.datos_estadisticas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sec_menu {
+    margin-bottom: 35px;
+}
+
+.lineas_menu img {
+    width: 43px;
+}
+
+.editar_perfil h2 {
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.sec_perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.icono_perfil img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #dce5ec;
+}
+
+.nombre_perfil h1 {
+    font-size: 64px;
+    margin: 22px 0;
+}
+
+.sec_seguidores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.datos_perfil {
+    width: 100%;
+    text-align: center;
+}
+
+.datos_perfil article,
+.datos_estadisticas article {
+    flex: 1;
+}
+
+.datos_perfil h2 {
+    font-size: 44px;
+    font-weight: normal;
+    margin: 0 0 8px;
+}
+
+.datos_perfil p {
+    font-size: 28px;
+    margin: 0;
+}
+
+.descripcion_perfil {
+    margin: 25px 0 35px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.Cuerpo {
+    padding: 0 55px 25px;
+}
+
+.sec_progreso {
+    padding: 25px 32px;
+    margin-bottom: 38px;
+    border: 3px solid #e5eaf1;
+    border-radius: 28px;
+}
+
+.titulo_progreso {
+    gap: 15px;
+    margin-bottom: 24px;
+}
+
+.titulo_progreso h2,
+.titulo_progreso p {
+    margin: 0;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.barra_progreso {
+    height: 22px;
+    overflow: hidden;
+    background: #eaf0f8;
+    border: 1px solid #e0e7f0;
+    border-radius: 20px;
+}
+
+.progreso {
+    height: 100%;
+    background: #568fe9;
+    border-radius: 20px;
+}
+
+.progreso_general {
+    width: 75%;
+}
+
+.progreso_matematicas {
+    width: 50%;
+}
+
+.sec_aprendizaje > h2,
+.sec_intereses > h2,
+.footer-statistics-title {
+    margin: 0 0 24px;
+    font-size: 32px;
+    font-weight: normal;
+}
+
+.art_matematicas {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 23px 30px;
+    margin-bottom: 35px;
+    border: 3px solid #e5eaf1;
+    border-radius: 26px;
+}
+
+.icono_matematicas {
+    width: 90px;
+    height: 90px;
+    flex-shrink: 0;
+    background: #b9d2fa;
+    border-radius: 14px;
+}
+
+.info_matematicas {
+    flex: 1;
+    min-width: 0;
+}
+
+.info_matematicas h3 {
+    margin: 0 0 15px;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.art_matematicas > p {
+    margin: 0;
+    font-size: 30px;
+    white-space: nowrap;
+}
+
+.sec_intereses {
+    margin-bottom: 35px;
+}
+
+.lista_intereses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0;
+    list-style: none;
+}
+
+.lista_intereses li {
+    padding: 16px 25px;
+    background: #fff5e8;
+    border-radius: 28px;
+    font-size: 26px;
+}
+
+.footer {
+    padding: 0 55px 40px;
+}
+
+.footer-statistics-title {
+    margin-bottom: 25px;
+}
+
+.datos_estadisticas {
+    text-align: center;
+}
+
+.datos_estadisticas article {
+    padding: 0 10px;
+}
+
+.datos_estadisticas article + article {
+    border-left: 2px solid #e8edf3;
+}
+
+.datos_estadisticas h3 {
+    margin: 0 0 12px;
+    font-size: 42px;
+    font-weight: normal;
+}
+
+.datos_estadisticas p {
+    margin: 0;
+    font-size: 27px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .contenedor-perfil {
+        border-radius: 30px;
+    }
+
+    header {
+        padding: 30px 20px 0;
+    }
+
+    .Cuerpo {
+        padding: 0 20px 25px;
+    }
+
+    .footer {
+        padding: 0 20px 30px;
+    }
+
+    .sec_menu {
+        margin-bottom: 25px;
+    }
+
+    .lineas_menu img {
+        width: 30px;
+    }
+
+    .editar_perfil h2 {
+        font-size: 18px;
+    }
+
+    .icono_perfil img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .nombre_perfil h1 {
+        margin: 18px 0;
+        font-size: 36px;
+    }
+
+    .datos_perfil h2 {
+        font-size: 26px;
+    }
+
+    .datos_perfil p,
+    .lista_intereses li,
+    .datos_estadisticas p {
+        font-size: 15px;
+    }
+
+    .descripcion_perfil {
+        margin: 20px 0 28px;
+        font-size: 17px;
+    }
+
+    .sec_progreso {
+        padding: 18px;
+        margin-bottom: 30px;
+        border-radius: 20px;
+    }
+
+    .titulo_progreso {
+        margin-bottom: 18px;
+    }
+
+    .titulo_progreso h2,
+    .titulo_progreso p {
+        font-size: 19px;
+    }
+
+    .barra_progreso {
+        height: 14px;
+    }
+
+    .sec_aprendizaje > h2,
+    .sec_intereses > h2,
+    .footer-statistics-title {
+        font-size: 22px;
+    }
+
+    .art_matematicas {
+        gap: 12px;
+        padding: 15px;
+        border-radius: 20px;
+    }
+
+    .icono_matematicas {
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+    }
+
+    .info_matematicas h3 {
+        margin-bottom: 12px;
+        font-size: 17px;
+    }
+
+    .art_matematicas > p {
+        font-size: 18px;
+    }
+
+    .lista_intereses {
+        gap: 8px;
+    }
+
+    .lista_intereses li {
+        padding: 12px 14px;
+    }
+
+    .datos_estadisticas article {
+        padding: 0 5px;
+    }
+
+    .datos_estadisticas h3 {
+        font-size: 24px;
+    }
+}
